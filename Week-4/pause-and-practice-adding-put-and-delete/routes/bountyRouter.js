@@ -32,7 +32,7 @@ bountyRouter.route("/").get((req, res)=>{
     const bountyId = req.params.bountyId
     const bountyIndex = bounties.findIndex(bounty => bounty._id === bountyId)
     const updatedBounty = Object.assign(bounties[bountyIndex], req.body)
-    res.send(`Bounty updated/ \n ${updatedBounty} \n Current Bounties: \n ${bounties}`)
+    res.send(`Bounty updated. \n ${updatedBounty} \n Current Bounties: \n ${bounties}`)
 })
 
 module.exports = bountyRouter
