@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json())
 
-app.use("/bounties", require("./routes/bountyRouter.js"))
+app.use("/starships", require("./routes/starshipNameRouter.js"))
 
 app.listen(9000, () => {
     console.log("The server is running on Port 9000.")
